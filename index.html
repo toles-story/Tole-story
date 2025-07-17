@@ -75,13 +75,34 @@
       font-size: 1rem;
       margin: 5px 0;
     }
+      .logo-text {
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 2.4rem;
+      color: #fdd835;
+      text-shadow: 2px 2px 0 #1976d2, -2px -2px 0 #1976d2, 2px -2px 0 #1976d2, -2px 2px 0 #1976d2;
+      text-align: center;
+      margin-top: 8px;
+    }
+  </style>
+  <style>
+    .logo-container {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .logo-container img {
+      max-width: 180px;
+      height: auto;
+    }
   </style>
 </head>
 <body>
-  <div class="header">
-    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Compass_icon_blue.svg/120px-Compass_icon_blue.svg.png" alt="Logo Tôles-Story">
-    <div class="logo-text">Tôles-Story</div>
-  </div>
+  <div class="logo-container">
+  <img src="logo-compas-final.png" alt="Logo Compas Tôles-Story" style="max-width: 180px; height: auto; display: block; margin: 0 auto;">
+</div>
+</div>
+</div>
+</div>
+</div>
 
   <form id="form">
     <label>Type de pièce</label>
@@ -140,13 +161,13 @@
   </div>
 
   <script>
-    document.getElementById("form").addEventListener("submit", function(e) {
-      e.preventDefault();
+    document.getElementById("form").addEventListener("submit", function(event) {
+      event.preventDefault();
 
       const L = parseFloat(document.getElementById("longueur").value);
       const l = parseFloat(document.getElementById("largeur").value);
       const h = parseFloat(document.getElementById("hauteur").value);
-      const e = parseFloat(document.getElementById("epaisseur").value);
+      const epaisseur = parseFloat(document.getElementById("epaisseur").value);
       const plis = parseInt(document.getElementById("plis").value);
       const encoche = document.getElementById("encoche").value;
       const soudure = document.getElementById("soudure").value;
