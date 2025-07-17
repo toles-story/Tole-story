@@ -7,49 +7,58 @@
   <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Luckiest Guy', cursive;
-      background: linear-gradient(to right, #f7e35f, #f7797d);
-      color: #2b2b2b;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
       margin: 0;
       padding: 20px;
     }
-    h1 {
+    .header {
       text-align: center;
-      font-size: 3rem;
-      color: #0077c2;
-      text-shadow: 2px 2px #fff;
+      margin-bottom: 10px;
+    }
+    .logo-img {
+      width: 120px;
+      height: auto;
+      margin-bottom: 5px;
+    }
+    .logo-text {
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 2.4rem;
+      color: #fdd835;
+      text-shadow: 2px 2px 0 #1976d2, -2px -2px 0 #1976d2, 2px -2px 0 #1976d2, -2px 2px 0 #1976d2;
     }
     form, .results {
-      max-width: 600px;
-      margin: 20px auto;
-      background: #fff8dc;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+      max-width: 500px;
+      margin: 10px auto;
+      background: #ffffff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     label {
       display: block;
       margin-top: 10px;
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
     input, select {
       width: 100%;
-      padding: 10px;
+      padding: 8px;
       margin-top: 5px;
-      border-radius: 5px;
+      font-size: 0.9rem;
+      border-radius: 4px;
       border: 1px solid #ccc;
     }
     button {
-      margin-top: 20px;
-      padding: 12px;
+      margin-top: 15px;
+      padding: 10px;
       width: 100%;
       background: #0077c2;
       color: #fff;
       border: none;
-      border-radius: 10px;
-      font-size: 1.2rem;
+      border-radius: 5px;
+      font-size: 1rem;
       cursor: pointer;
-      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
     }
     button:hover {
       background-color: #005fa3;
@@ -58,16 +67,22 @@
       display: none;
     }
     .results h2 {
-      font-size: 2rem;
+      font-size: 1.5rem;
       color: #d32f2f;
+      margin-bottom: 10px;
     }
     .results p {
-      font-size: 1.2rem;
+      font-size: 1rem;
+      margin: 5px 0;
     }
   </style>
 </head>
 <body>
-  <h1>Tôles-Story</h1>
+  <div class="header">
+    <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Compass_icon_blue.svg/120px-Compass_icon_blue.svg.png" alt="Logo Tôles-Story">
+    <div class="logo-text">Tôles-Story</div>
+  </div>
+
   <form id="form">
     <label>Type de pièce</label>
     <select id="type">
